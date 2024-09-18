@@ -1,13 +1,11 @@
-// import { useState } from 'react'
-import './App.css'
+import { useState } from 'react'
+import './App.css';
+import AddTaskForm from './components/AddTaskForm';
 
-function App() {
-
-  return (
+const App = () => (
     <>
-
+        <AddTaskForm/>
     </>
-  )
-}
+);
 
 export default App
