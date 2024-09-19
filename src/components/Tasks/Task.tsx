@@ -4,7 +4,7 @@ import './Task.css'
 interface TaskProps {
     task: { id: number, text: string },
     onDeleteTask: () => void,
-    key?: number,
+    key: number,
 }
 
 const Task: React.FC<TaskProps> = ({task, onDeleteTask, key}) => {
