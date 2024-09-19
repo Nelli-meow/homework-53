@@ -42,7 +42,11 @@ const App = () => {
             />
             <div className="task-list">
                 {tasks.map(task => (
-                    <Task key={task.id} task={task} onDeleteTask={deleteTask} />
+                    <Task
+                        key={task.id}
+                        task={task}
+                        onDeleteTask={() => deleteTask(task.id)}
+                    />
                 ))}
             </div>
         </>
